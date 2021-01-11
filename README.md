@@ -1,3 +1,9 @@
+<!--
+ * @Author: hyy
+ * @Date: 2020-12-22 10:15:40
+ * @LastEditors: hyy
+ * @LastEditTime: 2021-01-11 10:52:16
+-->
 # hackernews-async-ts
 
 [Hacker News](https://news.ycombinator.com/) showcase using typescript && egg
@@ -14,11 +20,12 @@ $ open http://localhost:7001/
 
 Don't tsc compile at development mode, if you had run `tsc` then you need to `npm run clean` before `npm run dev`.
 
-### Deploy
+### 启动命令顺序
 
 ```bash
 $ npm run tsc
 $ npm start
+如果端口被占用，查看端口进程并结束再启动
 ```
 
 ### Npm Scripts

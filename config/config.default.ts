@@ -2,7 +2,7 @@
  * @Author: hyy
  * @Date: 2020-12-22 10:15:40
  * @LastEditors: hyy
- * @LastEditTime: 2020-12-22 10:27:33
+ * @LastEditTime: 2021-01-11 10:04:52
  */
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
 
@@ -24,6 +24,14 @@ export default (appInfo: EggAppInfo) => {
   config.cors = {
     origin: '*', // 访问白名单,根据你自己的需要进行设置
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
+  }
+
+  config.cluster = {
+    listen: {
+      path:'',
+      port: 9090,
+      hostname:'0.0.0.0'
+    }
   }
 
   // the return config will combines to EggAppConfig
