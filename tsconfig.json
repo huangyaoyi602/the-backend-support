@@ -4,7 +4,7 @@
     "target": "es2017",
     "module": "commonjs",
     "strict": true,
-    "noImplicitAny": false,
+    "noImplicitAny": false, //any不报错
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "charset": "utf8",

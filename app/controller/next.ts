@@ -2,13 +2,21 @@
  * @Author: hyy
  * @Date: 2020-12-22 11:06:47
  * @LastEditors: hyy
- * @LastEditTime: 2020-12-22 14:39:10
+ * @LastEditTime: 2021-01-27 13:14:38
  */
-import { Controller } from 'egg';
+import  Controller  from './base_controller';
 
-export default class NextController extends Controller {
-  public async index() {
-    const { ctx } = this;
-    ctx.body = '持续更新中，敬请期待';
+class NextController extends Controller{
+  async index(){
+    this.ctx.body  = {
+      name:'next',
+      category:'framework',
+      language:'Node.js'
+    }
+  } 
+  async page(){
+    this.ctx.body = '<html><h1>持续开发中。。。</h1></html>'
   }
 }
+
+module.exports = NextController

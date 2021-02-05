@@ -2,7 +2,7 @@
  * @Author: hyy
  * @Date: 2020-12-22 10:15:40
  * @LastEditors: hyy
- * @LastEditTime: 2021-01-11 10:52:16
+ * @LastEditTime: 2021-01-20 11:21:39
 -->
 # hackernews-async-ts
 
@@ -24,7 +24,7 @@ Don't tsc compile at development mode, if you had run `tsc` then you need to `np
 
 ```bash
 $ npm run tsc
-$ npm start
+$ npm run dev
 如果端口被占用，查看端口进程并结束再启动
 ```
 
